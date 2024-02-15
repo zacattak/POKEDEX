@@ -8,7 +8,7 @@ export class Berry {
     get ListButtonHTMLTemplate() {
         return `
         <div class="mb-2"> 
-            <button class="w-75">${this.name}</button>
+            <button onclick="app.PokemonController.getBerryDetails('${this.index}')" class="w-75">${this.name}</button>
         </div>
             `
     }

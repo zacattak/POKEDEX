@@ -25,4 +25,8 @@ export class PokemonController {
             console.error(error);
         }
     }
+
+    getBerryDetails(berryIndex) {
+        console.log('getting berry details', berryIndex);
+    }
 }
