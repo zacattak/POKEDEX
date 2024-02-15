@@ -26,7 +26,11 @@ export class PokemonController {
         }
     }
 
-    getBerryDetails(berryIndex) {
+    async getBerryDetails(berryIndex) {
         console.log('getting berry details', berryIndex);
+        await pokemonService.getBerryDetails(berryIndex)
+    } catch(error) {
+        Pop.error(error)
+        console.error(error);
     }
 }

@@ -14,6 +14,10 @@ class PokemonService {
         AppState.berries = newBerries
 
     }
+
+    async getBerryDetails(berryIndex) {
+        const response = await pokeAPI.get(`/api/v2/berry${berryIndex}`)
+    }
 }
 
 export const pokemonService = new PokemonService()
