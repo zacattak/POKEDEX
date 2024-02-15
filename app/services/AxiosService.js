@@ -12,8 +12,8 @@ export const api = axios.create({
 //@ts-ignore
 
 export const pokeAPI = axios.create({
-  baseURL: 'https://pokeapi.co/api/v2/',
-  timeout: 3000
+  baseURL: 'https://pokeapi.co',
+  timeout: 8000
 })
 
 api.interceptors.request.use(config => config, handleAxiosError)
